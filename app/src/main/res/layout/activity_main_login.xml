@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:text="用户登录"
+        android:textSize="30dp"
+        android:textColor="#6684e4" />//标题属性：大小位置颜色
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:hint="用户名:"
+        android:maxLines="1"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码:"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_below="@+id/account"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:text="登录"
+        />
+    <Button
+        android:id="@+id/resgiter"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:layout_alignParentRight="true"
+        android:text="注册"/>
+    <CheckBox
+        android:id="@+id/remember_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+    <TextView
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码"
+        android:layout_alignBaseline="@+id/remember_pass"
+        android:layout_alignBottom="@+id/remember_pass"
+        android:layout_toRightOf="@+id/remember_pass"
+        android:layout_toEndOf="@+id/remember_pass" />
+
+
+</RelativeLayout>
+
+
+
+

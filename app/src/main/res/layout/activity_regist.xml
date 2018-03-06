@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="用户注册"
+        android:textColor="#6684e4"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zhuceming"
+        android:text="新用户名"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/register_edit"
+        android:layout_alignBottom="@+id/register_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_edit"
+        android:layout_toRightOf="@+id/zhuceming"
+        android:layout_below="@+id/text2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mima2"
+        android:text="密码    "
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/pass_edit"
+        android:layout_alignBottom="@+id/pass_edit"
+        android:layout_toLeftOf="@+id/pass_edit"
+        android:layout_toStartOf="@+id/pass_edit" />
+    <EditText
+        android:id="@+id/pass_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_edit"
+        android:inputType="textPassword"
+        android:layout_alignLeft="@+id/register_edit"
+        android:layout_alignStart="@+id/register_edit" />
+    <TextView
+        android:id="@+id/chongfu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认密码"
+        android:textSize="20dp"
+        android:layout_below="@+id/pass_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+    <EditText
+        android:id="@+id/passcheck_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/chongfu"
+        android:layout_alignBottom="@+id/chongfu"
+        android:layout_toRightOf="@+id/chongfu"
+        android:layout_toEndOf="@+id/chongfu" />
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_below="@+id/passcheck_edit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>
